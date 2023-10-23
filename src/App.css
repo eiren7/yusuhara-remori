@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap");
+
+#root {
+  margin: 0 auto;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 600;
+}
+
+.viewport {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  flex: 1;
+  padding: 4rem;
+  padding-top: 2rem;
+}
+
+.content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-items: left;
+  position: fixed;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+
+.nav-container img {
+  padding-bottom: 2rem;
+}
+
+.nav-container ul {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.3rem;
+  font-size: large;
+}
+
+.nav-container ul a {
+  color: darkgreen;
+}
+
+.nav-container button {
+  border-radius: 0.1rem;
+  background-color: darkgreen;
+  color: white;
+}
+
+.nav-container:hover {
+  border: none;
+}
+
+.banner-title {
+  position: absolute;
+  writing-mode: vertical-rl;
+  align-self: center;
+  color: darkgreen;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+
+.banner-title p {
+  letter-spacing: 0.4rem;
+  margin: 1rem;
+  padding: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.banner-slider img {
+  overflow: hidden;
+}
+
+
+.about {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-title {
+  writing-mode: vertical-rl;
+  align-self: center;
+}
+
+.about-title .subtitle {
+  font-size: 100%;
+}
+
+.about-title p {
+  direction: rtl;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.about-item-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-item {
+  background: none;
+  border: none;
+  margin: 2rem;
+  padding: 2rem;
+  width: 25rem;
+}
+
+.about-item img {
+  background-color: #efefe5;
+  border-radius: 50%;
+  transition: all 1s ease;
+  transition-duration: 1s;
+}
+
+.about-item img:hover {
+  background-color: bisque;
+}
+
+.people {
+  background-color: #efefe5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.people-column ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people-column img {
+  width: 60%;
+}
+
+.people button {
+  width: fit-content;
+  height: fit-content;
+  margin: 2rem;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px;
+  border-color: #efefe5;
+  padding: 6rem;
+}
+
+footer {
+  background-color: #efefe5;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+footer .copyright {
+  font-size: 1rem;
+  padding-right: 2rem;
+}
+
+footer .contact {
+  padding-left: 4%;
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+}
+
+footer .logo img {
+  margin-right: 1.5rem;
+}
+
+.tel-fax {
+  display: flex;
+}
+
+.tel-fax h4 {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
