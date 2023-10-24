@@ -130,9 +130,14 @@ header {
 .about-item {
   background: none;
   border: none;
+  outline: none;
   margin: 2rem;
   padding: 2rem;
   width: 25rem;
+}
+
+.about-item:focus {
+  outline: 2px solid transparent;
 }
 
 .about-item img {
@@ -179,7 +184,7 @@ header {
 }
 
 .people-column img {
-  width: 90%;
+  width: 95%;
 }
 
 .people-column .name {
