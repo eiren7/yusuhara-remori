@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react"
+
 const People = () => {
   return (
     <section className="people">
       <div className="people-title">
         <p>りもりの暮らし</p>
-        <p>LIFE</p>
         <span>高知県梼原町では、私たちと一緒に、</span>
         <span>未来の森林づくりをしてくれる仲間を募集しています。</span>
       </div>
@@ -28,9 +29,8 @@ const People = () => {
           <p>川上木材代表／CoMORI副会長</p>
         </ul>
       </div>
-      <button>
-        <p>くらし一覧はこちら →</p>
-      </button>
+
+      <button>くらし一覧はこちら →</button>
     </section>
   )
 }

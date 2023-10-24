@@ -18,7 +18,7 @@ const Slider = () => {
 
   return (
     <div className="banner-slider">
-      <img src={images[currentImageIndex]} />
+      <img src={images[currentImageIndex]}/>
     </div>
   )
 }

@@ -14,6 +14,11 @@ const App = () => {
           <Header />
         </div>
         <div className="content">
+          <p style={{ color: "darkgreen" }}>
+            WARNING! This is a copysite of https://yusuhararemori.jp/index.html.
+            <br />
+            All Rights belong to the original creator and Yusuhara Town.
+          </p>
           <Banner />
           <About />
           <People />

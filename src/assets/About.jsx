@@ -2,7 +2,6 @@ const About = () => {
   return (
     <section className="about">
       <div className="about-title">
-        <p className="subtitle">ABOUT</p>
         <p>りもりについて</p>
       </div>
 
