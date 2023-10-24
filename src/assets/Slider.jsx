@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { images } from "../../images"
+import images from "../../images"
 
 const Slider = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -18,7 +18,7 @@ const Slider = () => {
 
   return (
     <div className="banner-slider">
-      <img src={images[currentImageIndex]} className="fade-in"/>
+      <img src={images[currentImageIndex]} />
     </div>
   )
 }
