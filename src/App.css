@@ -183,6 +183,15 @@ header {
   align-items: center;
 }
 
+.people-column a {
+  transition: all 1s ease;
+  transition-duration: 0.5s;
+}
+
+.people-column a:hover {
+  opacity: 0.75;
+}
+
 .people-column img {
   width: 95%;
 }
@@ -196,7 +205,7 @@ header {
   margin: 0.5rem;
 }
 
-.people button {
+.people .detail {
   margin: 2rem;
   border: none;
   border-radius: 0.1rem;
