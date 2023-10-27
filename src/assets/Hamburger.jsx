@@ -1,13 +1,19 @@
-const Header = () => {
-  return (
-    <header className="nav-container">
-      <img
-        src="https://yusuhararemori.jp/img/common/head_logo.png"
-        width={200}
-        height={54}
-      />
+import { useState } from "react"
+import { GiHamburgerMenu } from "react-icons/gi"
 
-      <nav>
+const Hamburger = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
+  return (
+    <div>
+      <div className="hamburger-icon" onClick={toggleMenu}>
+        <GiHamburgerMenu />
+      </div>
+      <ul className="hamburger-menu">
         <ul>
           <a href="https://yusuhararemori.jp/index.html">ReMORIホーム</a>
         </ul>
@@ -34,7 +40,7 @@ const Header = () => {
           <a href="https://yusuhararemori.jp/comori.html">若手林業研究会</a>
         </ul>
         <ul>
-          <a href="https://yusuhararemori.jp/photo_library.html">
+          <a href="https://yusuhararemori.jp/photo_ulbrary.html">
             ReMORI写真館
           </a>
         </ul>
@@ -49,10 +55,10 @@ const Header = () => {
             お問い合わせ
           </a>
         </ul>
-      </nav>
+      </ul>
       <button>募集要項・応募フォーム →</button>
-    </header>
+    </div>
   )
 }
 
-export default Header
+export default Hamburger
